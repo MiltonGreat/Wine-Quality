@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project explores the Wine Quality Dataset, aiming to predict the quality of wine based on its physicochemical attributes. The dataset is preprocessed and analyzed to gain insights, and machine learning models will be applied to classify the quality of wine.
+This prepares data from the Wine Quality Dataset to predict the quality of wine based on its physicochemical attributes. The dataset is preprocessed and analyzed to gain insights. The data is prepared for the next step of choosing a machine learning model that can be applied to classify the quality of wine.
 
 ### Objectives 
 
