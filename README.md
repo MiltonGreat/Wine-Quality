@@ -4,6 +4,21 @@
 
 This prepares data from the Wine Quality Dataset to predict the quality of wine based on its physicochemical attributes. The dataset is preprocessed and analyzed to gain insights. The data is prepared for the next step of choosing a machine learning model that can be applied to classify the quality of wine.
 
+### Quality Issues:
+
+- Missing or imprecise measurements for physicochemical attributes.
+- Class imbalance in wine quality ratings (e.g., fewer high-quality wines).
+- Correlated features (e.g., alcohol content and density).
+
+Cleaning/Transformation:
+- Impute missing values using mean or median.
+- Perform feature selection to remove highly correlated attributes.
+- Balance the dataset using techniques like SMOTE for classification tasks.
+
+Known Limitations:
+- Subjectivity in wine quality ratings.
+- Lack of data on external factors like vineyard location or climate conditions.
+
 ### Objectives 
 
 This data science project designed to:
