@@ -2,22 +2,7 @@
 
 ### Overview
 
-This prepares data from the Wine Quality Dataset to predict the quality of wine based on its physicochemical attributes. The dataset is preprocessed and analyzed to gain insights. The data is prepared for the next step of choosing a machine learning model that can be applied to classify the quality of wine.
-
-### Quality Issues:
-
-- Missing or imprecise measurements for physicochemical attributes.
-- Class imbalance in wine quality ratings (e.g., fewer high-quality wines).
-- Correlated features (e.g., alcohol content and density).
-
-Cleaning/Transformation:
-- Impute missing values using mean or median.
-- Perform feature selection to remove highly correlated attributes.
-- Balance the dataset using techniques like SMOTE for classification tasks.
-
-Known Limitations:
-- Subjectivity in wine quality ratings.
-- Lack of data on external factors like vineyard location or climate conditions.
+The dataset consists of 1,143 records of red wine with 11 input features and 1 target column indicating the wine quality. The features include physicochemical properties like acidity, alcohol content, pH, sulfur levels, and density. The quality column is rated on a scale from 3 to 8, where a higher number indicates better quality.
 
 ### Objectives 
 
@@ -44,29 +29,50 @@ The Wine Quality Dataset contains the following attributes:
 - `sulphates`: Sulphate content, contributes to wine's aroma
 - `alcohol`: Alcohol content in the wine
 
+### Features
+
+    fixed acidity: Titrable acidity in wine (g tartaric acid per liter)
+    volatile acidity: Amount of acetic acid in wine (g per liter)
+    citric acid: Amount of citric acid (g per liter)
+    residual sugar: Residual sugar content (g per liter)
+    chlorides: Amount of chlorides (g per liter)
+    free sulfur dioxide: Free sulfur dioxide content (ppm)
+    total sulfur dioxide: Total sulfur dioxide content (ppm)
+    density: Density of the wine (g/cm³)
+    pH: pH of the wine
+    sulphates: Sulphate content (g per liter)
+    alcohol: Alcohol content (percentage)
+    quality: Quality rating (3 to 8)
+    Id: Unique identifier (not used for prediction)
+
 ### Key Steps
 
-1. **Data Preprocessing**
-   - Handle missing values (if any).
-   - Normalize numerical features using Min-Max scaling.
-   - One-hot encode categorical features (if any).
-   - Drop irrelevant or redundant columns.
+1. **Data Loading & Exploration**
+- The dataset is loaded and initial exploration is done to check the data's structure, types, and basic statistics.
 
-2. **Exploratory Data Analysis (EDA)**
-   - Visualize the distribution of the `quality` variable.
-   - Explore relationships between different features using scatter plots and correlation matrices.
+2. **Data Cleaning & Transformation**
+- Missing values are handled by imputing with the median of each column.
 
-### Visualizations
+3. **Feature Scaling**
+- All the features are scaled using StandardScaler to normalize them for machine learning models.
 
-- Correlation Heatmap: Displays relationships between features.
-- Feature Distributions: Understand the distribution of physicochemical properties.
+4. **Dimensionality Reduction**
+- PCA (Principal Component Analysis) is applied to reduce highly correlated features, retaining 95% of the variance.
+
+5. **Class Imbalance Handling**
+- SMOTE (Synthetic Minority Over-sampling Technique) is used to balance the distribution of wine quality ratings by generating synthetic samples for minority classes.
+
+6. **Data Splitting**
+- The dataset is split into training and testing sets (80% training, 20% testing).
+
+7. **Visualization**
+- Correlation heatmaps and distribution plots are created to visually understand the relationships between features and the target variable.
 
 ### Future Work
 
 - Build and compare machine learning models such as Logistic Regression, Random Forest, and XGBoost.
 - Experiment with hyperparameter tuning to improve model performance.
 - Implement feature selection techniques to optimize the model.
-- Deploy the model using Streamlit or Flask for real-world usage.
 
 ### Source
 
