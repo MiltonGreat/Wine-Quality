@@ -31,19 +31,19 @@ The Wine Quality Dataset contains the following attributes:
 
 ### Features
 
-    fixed acidity: Titrable acidity in wine (g tartaric acid per liter)
-    volatile acidity: Amount of acetic acid in wine (g per liter)
-    citric acid: Amount of citric acid (g per liter)
-    residual sugar: Residual sugar content (g per liter)
-    chlorides: Amount of chlorides (g per liter)
-    free sulfur dioxide: Free sulfur dioxide content (ppm)
-    total sulfur dioxide: Total sulfur dioxide content (ppm)
-    density: Density of the wine (g/cm³)
-    pH: pH of the wine
-    sulphates: Sulphate content (g per liter)
-    alcohol: Alcohol content (percentage)
-    quality: Quality rating (3 to 8)
-    Id: Unique identifier (not used for prediction)
+- fixed acidity: Titrable acidity in wine (g tartaric acid per liter)
+- volatile acidity: Amount of acetic acid in wine (g per liter)
+- citric acid: Amount of citric acid (g per liter)
+- residual sugar: Residual sugar content (g per liter)
+- chlorides: Amount of chlorides (g per liter)
+- free sulfur dioxide: Free sulfur dioxide content (ppm)
+- total sulfur dioxide: Total sulfur dioxide content (ppm)
+- density: Density of the wine (g/cm³)
+- pH: pH of the wine
+- sulphates: Sulphate content (g per liter)
+- alcohol: Alcohol content (percentage)
+- quality: Quality rating (3 to 8)
+- Id: Unique identifier (not used for prediction)
 
 ### Key Steps
 
