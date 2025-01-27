@@ -12,6 +12,14 @@ This data science project designed to:
 - Build and evaluate machine learning models to classify wine quality.
 - Use data preprocessing techniques to normalize features for better model performance.
 
+### EDA Questions
+
+I want to answer the following questions:
+
+1. What is the distribution of wine quality ratings?
+2. What are the relationships between the features?
+3. What is the correlation between physicochemical properties?
+
 ### Dataset Overview
 
 The Wine Quality Dataset contains the following attributes:
